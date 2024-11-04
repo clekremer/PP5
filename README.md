@@ -1,34 +1,16 @@
-# ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Mildew Detection in Cherry Leaves
 
-## Template Instructions
-
-Welcome,
-
-This is the Code Institute student template for the Cherry Leaves project option in Predictive Analytics. We have preinstalled all of the tools you need to get started. It's perfectly okay to use this template as the basis for your project submissions. Click the `Use this template` button above to get started.
-
-You can safely delete the Template Instructions section of this README.md file and modify the remaining paragraphs for your own project. Please do read the Template Instructions at least once, though! It contains some important information about the IDE and the extensions we use.
-
-## How to use this repo
-
-1. Use this template to create your GitHub project repo
-
-1. Log into your cloud IDE with your GitHub account.
-
-1. On your Dashboard, click on the New Workspace button
-
-1. Paste in the URL you copied from GitHub earlier
-
-1. Click Create
-
-1. Wait for the workspace to open. This can take a few minutes.
-
-1. Open a new terminal and `pip3 install -r requirements.txt`
-
-1. Open the jupyter_notebooks directory, and click on the notebook you want to open.
-
-1. Click the kernel button and choose Python Environments.
-
-Note that the kernel says Python 3.8.18 as it inherits from the workspace, so it will be Python-3.8.18 as installed by our template. To confirm this, you can use `! python --version` in a notebook code cell.
+## Table of Contents
+1. [Dataset Content](#dataset-content)
+2. [Business Requirements](#business-requirements)
+3. [Hypothesis and how to validate](#hypothesis-and-how-to-valide)
+4. [Rationale to map the business requirements to the data visualizations and ML tasks](#Rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ML-tasks)
+5. [ML Business case](#ml-business-case)
+6. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
+7. [Unfixed Bugs](#unfixed-bugs)
+8. [Deployment](#deployment)
+9. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+10. [Credits](#credits)
 
 ## Cloud IDE Reminders
 
