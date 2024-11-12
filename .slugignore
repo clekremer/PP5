@@ -4,7 +4,9 @@
 
 /jupyter_notebooks/**
 
-README.md
-.gitpod.dockerfile
-.gitpod.yml
-app_pages/__pycache__/*
+/README.md
+/.gitpod.dockerfile
+/.gitpod.yml
+/app_pages/__pycache__/*
+
+/outputs/v1/*
