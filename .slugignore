@@ -3,3 +3,8 @@
 /inputs/cherryleaves_dataset/cherry-leaves/validation/*
 
 /jupyter_notebooks/**
+
+README.md
+.gitpod.dockerfile
+.gitpod.yml
+app_pages/__pycache__/*
