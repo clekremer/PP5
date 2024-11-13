@@ -31,3 +31,10 @@ def page_leaves_visualizer_body():
       st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
       st.write("---")
 
+    if st.checkbox("Differences between average mildew infected leaf and average healthy leaf"):
+          diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
+
+          st.warning(
+            f"* We notice this study didn't show any significant"
+            f"patterns where we could intuitively differentiate one from another except of very small differences.")
+          st.image(diff_between_avgs, caption='Difference between average images')
