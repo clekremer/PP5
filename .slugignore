@@ -9,4 +9,3 @@
 /.gitpod.yml
 /app_pages/__pycache__/*
 
-/outputs/v1/*
