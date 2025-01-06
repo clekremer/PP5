@@ -10,3 +10,21 @@
 /app_pages/__pycache__/*
 
 /outputs/v1/*
+
+
+# Ignore .jpg files for deployment 
+*.jpg
+*.tmp
+/test
+*.backup
+*.log
+.git/
+*.pdf
+*.zip
+README.md
+/documentation
+/inputs/cherry_leaves_dataset/cherry-leaves/test/*
+/inputs/cherry_leaves_dataset/cherry-leaves/healthy
+/inputs/cherry_leaves_dataset/cherry-leaves/powdery_mildew
+/inputs/cherry-leaves_dataset/cherry-leaves/train
+/assets/images
