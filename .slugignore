@@ -1,15 +1,14 @@
 # Ignore dataset files
-inputs/cherryleaves_dataset/cherry-leaves/test/*
-inputs/cherryleaves_dataset/cherry-leaves/train/*
-inputs/cherryleaves_dataset/cherry-leaves/validation/*
-inputs/cherryleaves_dataset/cherry-leaves/healthy/*
-inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew/*
+/inputs/cherryleaves_dataset/cherry-leaves/test/*
+/inputs/cherryleaves_dataset/cherry-leaves/train/*
+/inputs/cherryleaves_dataset/cherry-leaves/validation/*
+/inputs/cherryleaves_dataset/cherry-leaves/healthy/*
+/inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew/*
 
 # Ignore outputs
-outputs/v1/*
-outputs/v2/*
-outputs/v3/*
-outputs/v4/*
+/outputs/v2/*
+/outputs/v3/*
+/outputs/v4/*
 
 # Ignore notebooks and related files
 jupyter_notebooks/**
