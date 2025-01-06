@@ -10,8 +10,6 @@ cloudinary_python.txt
 kaggle.json
 *.zip
 *.jpg
-/inputs/cherryleaves_dataset/cherry-leaves/test/*
-/inputs/cherryleaves_dataset/cherry-leaves/train/*
 
 /inputs/cherryleaves_dataset/cherry-leaves/test/*
 /inputs/cherryleaves_dataset/cherry-leaves/healthy/*
