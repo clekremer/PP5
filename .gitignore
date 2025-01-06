@@ -12,3 +12,8 @@ kaggle.json
 /inputs/cherryleaves_dataset/cherry-leaves/test/*
 /inputs/cherryleaves_dataset/cherry-leaves/train/*
 
+*.ipynb_checkpoints
+*.h5
+*.pkl
+logs/
+datasets/
