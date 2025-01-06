@@ -24,10 +24,11 @@
 jupyter_notebooks/
 README.md
 /documentation
-/inputs/cherry_leaves_dataset/cherry-leaves/test/*
-/inputs/cherry_leaves_dataset/cherry-leaves/healthy
-/inputs/cherry_leaves_dataset/cherry-leaves/powdery_mildew
-/inputs/cherry-leaves_dataset/cherry-leaves/train
+/inputs/cherryleaves_dataset/cherry-leaves/test/*
+/inputs/cherryleaves_dataset/cherry-leaves/healthy/*
+/inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew
+/inputs/cherryleaves_dataset/cherry-leaves/train/*
+/inputs/cherryleaves_dataset/cherry-leaves/validation/*
 /assets/images
 /outputs/v1/*
 /outputs/v2/*

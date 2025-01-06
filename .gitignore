@@ -13,12 +13,11 @@ kaggle.json
 /inputs/cherryleaves_dataset/cherry-leaves/test/*
 /inputs/cherryleaves_dataset/cherry-leaves/train/*
 
-inputs/cherryleaves_datasets/cherry-leaves/test/healthy
-inputs/cherryleaves_datasets/cherry-leaves/test/powdery_mildew
-inputs/cherryleaves_datasets/cherry-leaves/train/healthy
-inputs/cherryleaves_datasets/cherry-leaves/train/powdery_mildew
-inputs/cherryleaves_datasets/cherry-leaves/validation/powdery_mildew
-inputs/cherryleaves_datasets/cherry-leaves/validation/healthy
+/inputs/cherryleaves_dataset/cherry-leaves/test/*
+/inputs/cherryleaves_dataset/cherry-leaves/healthy/*
+/inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew
+/inputs/cherryleaves_dataset/cherry-leaves/train/*
+/inputs/cherryleaves_dataset/cherry-leaves/validation/*
 jupyter_notebooks/test_dataframe.csv
 jupyter_notebooks/train_dataframe.csv
 jupyter_notebooks/validation_dataframe.csv
