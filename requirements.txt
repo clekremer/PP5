@@ -9,3 +9,4 @@ streamlit
 scikit-learn
 tensorflow-cpu
 keras
+opencv-python-headless==4.9.0.80
