@@ -1,7 +1,7 @@
 # Ignore dataset files
-/inputs/cherryleaves_dataset/cherry-leaves/test/*
-/inputs/cherryleaves_dataset/cherry-leaves/train/*
-/inputs/cherryleaves_dataset/cherry-leaves/validation/*
+#/inputs/cherryleaves_dataset/cherry-leaves/test/*
+#/inputs/cherryleaves_dataset/cherry-leaves/train/*
+#/inputs/cherryleaves_dataset/cherry-leaves/validation/*
 
 
 /workspace/PP5/inputs/cherryleaves_dataset/cherry-leaves/test/*
@@ -9,9 +9,9 @@
 /workspace/PP5/inputs/cherryleaves_dataset/cherry-leaves/validation/*
 
 # Ignore outputs
-/outputs/v2/*
-/outputs/v3/*
-/outputs/v4/*
+#/outputs/v2/*
+#/outputs/v3/*
+#/outputs/v4/*
 
 /workspace/PP5/outputs/v2/*
 /workspace/PP5/outputs/v3/*
