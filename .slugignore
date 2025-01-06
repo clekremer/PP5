@@ -29,3 +29,5 @@ README.md
 /inputs/cherry_leaves_dataset/cherry-leaves/powdery_mildew
 /inputs/cherry-leaves_dataset/cherry-leaves/train
 /assets/images
+/outputs/v1/*
+/outputs/v2/*
