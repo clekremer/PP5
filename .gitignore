@@ -1,30 +1,49 @@
+# Environment and dependency files
+env.py
 core.Microsoft*
 core.mongo*
 core.python*
-env.py
-__pycache__/
-*.py[cod]
-node_modules/
-.github/
 cloudinary_python.txt
 kaggle.json
-*.zip
-*.jpg
 
+# Ignore Python cache and compiled files
+__pycache__/
+*.py[cod]
+
+# Ignore temporary and log files
+*.log
+*.tmp
+*.backup
+
+# Ignore media files
+*.jpg
+*.png
+*.pdf
+*.zip
+
+# Ignore datasets
 inputs/cherryleaves_dataset/cherry-leaves/test/*
-inputs/cherryleaves_dataset/cherry-leaves/test/*
-inputs/cherryleaves_dataset/cherry-leaves/healthy/*
-inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew
 inputs/cherryleaves_dataset/cherry-leaves/train/*
 inputs/cherryleaves_dataset/cherry-leaves/validation/*
+inputs/cherryleaves_dataset/cherry-leaves/healthy/*
+inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew/*
 
-
-jupyter_notebooks/test_dataframe.csv
-jupyter_notebooks/train_dataframe.csv
-jupyter_notebooks/validation_dataframe.csv
-README.md
-
+# Ignore outputs
 outputs/v1/*
 outputs/v2/*
 outputs/v3/*
 
+# Ignore notebooks and generated files
+jupyter_notebooks/**
+jupyter_notebooks/test_dataframe.csv
+jupyter_notebooks/train_dataframe.csv
+jupyter_notebooks/validation_dataframe.csv
+
+# Documentation
+README.md
+/documentation
+
+# Node and git directories
+node_modules/
+.github/
+.git/

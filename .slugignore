@@ -1,35 +1,37 @@
-/inputs/cherryleaves_dataset/cherry-leaves/test/*
-/inputs/cherryleaves_dataset/cherry-leaves/train/*
-/inputs/cherryleaves_dataset/cherry-leaves/validation/*
-
-/jupyter_notebooks/**
-
-/README.md
-/.gitpod.dockerfile
-/.gitpod.yml
-/app_pages/__pycache__/*
-
-/outputs/v1/*
-
-
-# Ignore .jpg files for deployment 
-*.jpg
-*.tmp
-/test
-*.backup
-*.log
-.git/
-*.pdf
-*.zip
-jupyter_notebooks/
-README.md
-/documentation
+# Ignore dataset files
 inputs/cherryleaves_dataset/cherry-leaves/test/*
-inputs/cherryleaves_dataset/cherry-leaves/healthy/*
-inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew
 inputs/cherryleaves_dataset/cherry-leaves/train/*
 inputs/cherryleaves_dataset/cherry-leaves/validation/*
-/assets/images
+inputs/cherryleaves_dataset/cherry-leaves/healthy/*
+inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew/*
+
+# Ignore outputs
 outputs/v1/*
 outputs/v2/*
 outputs/v3/*
+
+# Ignore notebooks and related files
+jupyter_notebooks/**
+
+# Ignore cache, logs, and temporary files
+__pycache__/
+*.pyc
+*.log
+*.tmp
+*.backup
+
+# Ignore media files
+*.jpg
+*.png
+*.pdf
+*.zip
+
+# Ignore documentation
+README.md
+/documentation
+/assets/images
+
+# Ignore git and configuration files
+.git/
+.gitpod.yml
+.gitpod.dockerfile
