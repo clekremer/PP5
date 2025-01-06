@@ -16,7 +16,7 @@ def page_leaves_visualizer_body():
         f"differentiates a parasitised from an healthy leaves.")
 
     
-    version = 'v4'
+    version = 'v5'
     if st.checkbox("Difference between average and variability image"):
       
       avg_mildew = plt.imread(f"outputs/{version}/avg_var_powdery_mildew.png")

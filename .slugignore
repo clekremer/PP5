@@ -9,6 +9,7 @@ inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew/*
 outputs/v1/*
 outputs/v2/*
 outputs/v3/*
+outputs/v4/*
 
 # Ignore notebooks and related files
 jupyter_notebooks/**
