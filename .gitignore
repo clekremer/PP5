@@ -6,14 +6,9 @@ core.python*
 cloudinary_python.txt
 kaggle.json
 
-# Ignore Python cache and compiled files
-__pycache__/
-*.py[cod]
+# Ignore compiled files
 
-# Ignore temporary and log files
-*.log
-*.tmp
-*.backup
+*.py[cod]
 
 # Ignore media files
 *.jpg
@@ -21,20 +16,8 @@ __pycache__/
 *.pdf
 *.zip
 
-# Ignore datasets
-inputs/cherryleaves_dataset/cherry-leaves/test/*
-inputs/cherryleaves_dataset/cherry-leaves/train/*
-inputs/cherryleaves_dataset/cherry-leaves/validation/*
-inputs/cherryleaves_dataset/cherry-leaves/healthy/*
-inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew/*
-
-# Ignore outputs
-outputs/v1/*
-outputs/v2/*
-outputs/v3/*
 
 # Ignore notebooks and generated files
-jupyter_notebooks/**
 jupyter_notebooks/test_dataframe.csv
 jupyter_notebooks/train_dataframe.csv
 jupyter_notebooks/validation_dataframe.csv
