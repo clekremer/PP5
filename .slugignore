@@ -2,13 +2,20 @@
 /inputs/cherryleaves_dataset/cherry-leaves/test/*
 /inputs/cherryleaves_dataset/cherry-leaves/train/*
 /inputs/cherryleaves_dataset/cherry-leaves/validation/*
-/inputs/cherryleaves_dataset/cherry-leaves/healthy/*
-/inputs/cherryleaves_dataset/cherry-leaves/powdery_mildew/*
+
+
+/workspace/PP5/inputs/cherryleaves_dataset/cherry-leaves/test/*
+/workspace/PP5/inputs/cherryleaves_dataset/cherry-leaves/train/*
+/workspace/PP5/inputs/cherryleaves_dataset/cherry-leaves/validation/*
 
 # Ignore outputs
 /outputs/v2/*
 /outputs/v3/*
 /outputs/v4/*
+
+/workspace/PP5/outputs/v2/*
+/workspace/PP5/outputs/v3/*
+/workspace/PP5/outputs/v4/*
 
 # Ignore notebooks and related files
 jupyter_notebooks/**
