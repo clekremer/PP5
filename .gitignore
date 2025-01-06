@@ -23,3 +23,5 @@ jupyter_notebooks/test_dataframe.csv
 jupyter_notebooks/train_dataframe.csv
 jupyter_notebooks/validation_dataframe.csv
 README.md
+
+outputs/v1/*
