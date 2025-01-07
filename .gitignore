@@ -22,5 +22,7 @@ inputs/cherryleaves_datasets/cherry-leaves/validation/powdery_mildew
 inputs/cherryleaves_datasets/cherry-leaves/validation/healthy
 outputs/v1
 /outputs/v1/*
+outputs/v2
+/outputs/v2/*
 
 README.md
