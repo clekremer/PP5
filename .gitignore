@@ -19,7 +19,5 @@ inputs/cherryleaves_datasets/cherry-leaves/train/healthy
 inputs/cherryleaves_datasets/cherry-leaves/train/powdery_mildew
 inputs/cherryleaves_datasets/cherry-leaves/validation/powdery_mildew
 inputs/cherryleaves_datasets/cherry-leaves/validation/healthy
-jupyter_notebooks/test_dataframe.csv
-jupyter_notebooks/train_dataframe.csv
-jupyter_notebooks/validation_dataframe.csv
+
 README.md
