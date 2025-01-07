@@ -2,7 +2,7 @@
 /inputs/cherryleaves_dataset/cherry-leaves/train/*
 #/inputs/cherryleaves_dataset/cherry-leaves/validation/*
 
-#/jupyter_notebooks/**
+/jupyter_notebooks/**
 
 /README.md
 /.gitpod.dockerfile
@@ -21,7 +21,7 @@
 .git/
 *.pdf
 *.zip
-#jupyter_notebooks/
+jupyter_notebooks/
 README.md
 /documentation
 /inputs/cherry_leaves_dataset/cherry-leaves/test/*
