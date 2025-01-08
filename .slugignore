@@ -21,7 +21,9 @@
 .git/
 *.pdf
 *.zip
-jupyter_notebooks/
+#jupyter_notebooks/
+/workspace/PP5/jupyter_notebooks/ModellingEvaluation.ipynb
+/workspace/PP5/jupyter_notebooks/DataCollection.ipynb
 README.md
 /documentation
 /inputs/cherry_leaves_dataset/cherry-leaves/test/*
