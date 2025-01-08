@@ -11,6 +11,12 @@
 
 /outputs/v1/*
 
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
 
 # Ignore .jpg files for deployment 
 *.jpg
