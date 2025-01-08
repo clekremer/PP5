@@ -26,7 +26,7 @@ outputs/v2
 /outputs/v2/*
 
 README.md
-/workspace/PP5/outputs/v4/class_indices.pkl
-/workspace/PP5/outputs/v4/evaluation.pkl
-/workspace/PP5/outputs/v4/image_shape.pkl
-/workspace/PP5/outputs/v4/mildew_detection_model.h5
+workspace/PP5/outputs/v4/class_indices.pkl
+workspace/PP5/outputs/v4/evaluation.pkl
+workspace/PP5/outputs/v4/image_shape.pkl
+workspace/PP5/outputs/v4/mildew_detection_model.h5
