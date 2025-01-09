@@ -40,11 +40,27 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## Hypothesis and how to validate?
 
-- List here your project hypothesis(es) and how you envision validating it (them).
+ - Cherry leaves which are infected with powdery mildew have a white coating and spots on its sureface
+ - Infected leaves can clearly be distinguished from healthy leaves and validation can be done by comparing healthy and infected leaves based on images
+ - an ML based model is used in an image visualizer to differentiate between healthy and infected cherry leafs
+ - the model should have a minimum validity of 97% accuracy
+ - By the help of this ML based image visualizer the process should become much more effective for the company in terms of time and money saving
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
 - List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
+
+Business Requirement 1: Data Visualization
+
+We will display the "mean" and "standard deviation" images for healthy and mildew infected leaves.
+We will display the difference between average healthy and mildew infected leaves.
+We will display an image montage for either healthy or mildew infected leaves. 
+
+
+Business Requirement 2: Classification
+
+We want to predict if a given leaf is infected with powdery mildew or not. 
+We want to build a binary classifier and generate reports.
 
 ## ML Business Case
 
