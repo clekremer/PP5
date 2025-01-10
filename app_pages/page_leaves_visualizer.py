@@ -13,7 +13,12 @@ def page_leaves_visualizer_body():
     st.write("### Leaves Visualizer")
     st.info(
         f"* The client is interested in having a study that visually "
-        f"differentiates a parasitised from an healthy leaves.")
+        f" differentiates a parasitised from an healthy leaves.")
+    
+    st.success(
+        f"This page should provide a visual reference of the differences "
+        f"between a healthy Cherry Leaf and a Cherry Leaf infected by powdery mildew"
+    )
 
     
     version = 'v4'
@@ -23,9 +28,9 @@ def page_leaves_visualizer_body():
       avg_healthy = plt.imread(f"outputs/{version}/avg_var_healthy.png")
 
       st.warning(
-        f"* We notice the average and variability images did not show "
-        f"patterns where we could intuitively differentiate one from another. " 
-        f"However, a small difference in the color pigment of the average images are seen for both labels.")
+        f" We noticed the average and variability images did not show "
+        f" patterns where we could intuitively differentiate one from another. " 
+        f" However, a small difference in the color pigment of the average images are seen for both labels.")
 
       st.image(avg_mildew, caption='Mildew leaf - Average and Variability')
       st.image(avg_healthy, caption='Healthy leaf - Average and Variability')
@@ -35,12 +40,17 @@ def page_leaves_visualizer_body():
           diff_between_avgs = plt.imread(f"outputs/{version}/avg_diff.png")
 
           st.warning(
-            f"* We notice this study didn't show any significant"
-            f"patterns where we could intuitively differentiate one from another except of very small differences.")
+            f" We notice this study didn't show any significant"
+            f" patterns where we could intuitively differentiate one from another except of very small differences.")
           st.image(diff_between_avgs, caption='Difference between average images')
 
     if st.checkbox("Image Montage"): 
       st.write("* To refresh the montage, click on the 'Create Montage' button")
+      st.info(
+        f" The montage should help to visually differentiate between a healthy"
+        f" and infected leaves. The infected leaf has white, powdery"
+        f" spots or patches on the top side of leaves")
+
       my_data_dir = 'inputs/cherryleaves_dataset/cherry-leaves'
       labels = os.listdir(my_data_dir+ '/validation')
       label_to_display = st.selectbox(label="Select label", options=labels, index=0)
