@@ -105,18 +105,40 @@ We want to build a binary classifier and generate reports.
 
 ## Main Data Analysis and Machine Learning Libraries
 
-- Here, you should list the libraries used in the project and provide an example(s) of how you used these libraries.
+ **NumPy**: A library for numerical computations in Python, providing support for multi-dimensional arrays, mathematical functions, linear algebra, and random number generation.
+
+ **Pandas**: A library for data manipulation and analysis, offering DataFrame objects for structured data handling, along with tools for cleaning, transforming, and analyzing data efficiently.
+
+ **Matplotlib**: A library for creating static, animated, and interactive visualizations in Python, offering fine-grained control over plots and charts.
+
+ **Seaborn**: A statistical data visualization library built on top of Matplotlib, designed to create aesthetically pleasing and informative graphics with simplified syntax for complex plots.
+
+ **Plotly**: An interactive graphing library that supports a wide range of plots (e.g., scatter, bar, heatmaps).
+
+ **Streamlit**: A Python library for building fast, interactive, and intuitive web apps, specifically geared toward showcasing machine learning models and data visualizations with minimal coding effort.
+
+ **Scikit-learn**: A machine learning library that provides simple and efficient tools for data mining and analysis, including classification, regression, clustering, and dimensionality reduction algorithms.
+
+ **TensorFlow (CPU version)**: A library for building and deploying machine learning models, particularly deep learning, with tools for training neural networks on CPUs.
+
+ **Keras**: A deep learning API running on top of TensorFlow, designed to enable fast prototyping, minimal code, and seamless implementation of neural networks.
+
 
 ## Credits
 
-- In this section, you need to reference where you got your content, media and from where you got extra help. It is common practice to use code from other repositories and tutorials. However, it is necessary to be very specific about these sources to avoid plagiarism.
-- You can break the credits section up into Content and Media, depending on what you have included in your project.
+[Code Institute Walkthrough Project 01] https://github.com/Code-Institute-Solutions/WalkthroughProject01: Code, basic structure, logic and design 
+[Code Institute Project Idea: Mildew Detection in Cherry Leaves] https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves: Template
+
+
 
 ### Content
 
-- The text for the Home page was taken from Wikipedia Article A.
-- Instructions on how to implement form validation on the Sign-Up page were taken from [Specific YouTube Tutorial](https://www.youtube.com/).
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
+- https://learn.codeinstitute.net/courses/course-v1:code_institute+CI_DA_ML+2021_Q4/courseware/07a3964f7a72407ea3e073542a2955bd/29ae4b4c67ed45a8a97bb9f4dcfa714b/: Lectures and Videos
+
+- https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+PA_PAGPPF+2/courseware/bde016cdbd184cdeafd341a73807e138/bd2104eb84de4e48a9df6f685773cbf2/: Background for the Requirements
+
+- https://en.wikipedia.org/wiki/Powdery_mildew#:~:text=Powdery%20mildew%20is%20a%20fungal,causal%20pathogen%20are%20quite%20distinctive: Context information abput Mildew infection 
+
 
 ### Media
 
@@ -125,4 +147,4 @@ We want to build a binary classifier and generate reports.
 
 ## Acknowledgements (optional)
 
-- Thank the people who provided support throughout this project.
+Special thanks to Kristyna for all your support, kindness, availability and positive attitude!
