@@ -64,12 +64,25 @@ We want to build a binary classifier and generate reports.
 
 ## ML Business Case
 
-- In the previous bullet, you potentially visualised an ML task to answer a business requirement. You should frame the business case using the method we covered in the course.
+ - Objective of the project is to develop a ML 2-class, singel-label classification model, which can predict if a a leaf is infected with powdery mildew or not. The model is based on historical image data.
+ - The model should offer cherry plantation farmers a more effective diagnostic method for powdery mildew detection
+ - the model success metrics are accuracy of 99% or above on the test set.
+ - The model output is defined as a flag, indicating if the leaf or the tree is infected with powdery mildew. The idea is that employees of the plantation will take a picture of some leaves of the tree and evaluate them in the App. The prediction is made on the fly.
+ - Currently mildew infection is identified manually in a very time-consuming process so any cherry plantation farm would benefit by using this model 
+ - The training data can be downloaded from Kaggle. The original image format is 256x256. As we need to consider a max Slug size of 500 MB on Heroku it is required to reduce the image fomat to 40x40. It is considered that this has no negative impact on model performance. 
 
 ## Dashboard Design
 
-- List all dashboard pages and their content, either blocks of information or widgets, like buttons, checkboxes, images, or any other items, that your dashboard library supports.
-- Finally, during the project development, you may revisit your dashboard plan to update a given feature (for example, at the beginning of the project, you were confident you would use a given plot to display an insight, but later, you chose another plot type).
+### Page 1: Quick Project Summary
+
+
+### Page 2: Leaves Visualizer
+
+### Page 3: Powdery Mildew Detection
+
+### Page 4: Project Hypothesis and Validation
+
+### Page 5: ML Performance Metrics
 
 ## Unfixed Bugs
 
