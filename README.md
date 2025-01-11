@@ -122,13 +122,15 @@ An ML based model is used in an image visualizer to differentiate between health
 
 ### Page 5: ML Performance Metrics
 
+- Label Frequencies for Train, Validation and Test Sets
+
 ![Page 5: ML Performance Metrics](assets/images/page_ml_performance.png)
 
-- Label Frequencies for Train, Validation and Test Sets
 - Model History: Accuracy and Losses
 - Model evaluation result
 
 
+![Page 5: ML Performance Metrics](assets/images/page_ml_performance_2.png)
 
 ## Unfixed Bugs
 
@@ -185,11 +187,6 @@ An ML based model is used in an image visualizer to differentiate between health
 
 - https://en.wikipedia.org/wiki/Powdery_mildew#:~:text=Powdery%20mildew%20is%20a%20fungal,causal%20pathogen%20are%20quite%20distinctive: Context information abput Mildew infection 
 
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site.
-- The images used for the gallery page were taken from this other open-source site.
 
 ## Acknowledgements
 
