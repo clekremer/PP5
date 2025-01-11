@@ -6,7 +6,7 @@
 3. [Hypothesis and how to validate](#hypothesis-and-how-to-valide)
 4. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ML-tasks)
 5. [ML Business Case](#ml-business-case)
-6. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
+6. [Dashboard design](#dashboard-design)
 7. [Unfixed Bugs](#unfixed-bugs)
 8. [Deployment](#deployment)
 9. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
@@ -74,14 +74,50 @@ We want to build a binary classifier and generate reports.
 
 ### Page 1: Quick Project Summary
 
+ - General Information
+    - Powdery mildew is a fungal disease on cherry trees. 
+    - Infected plants display white powdery coat on the leaves and stems. 
+    - The disease occurs mostly in high humid and moderate temperatures. 
+    - It can have severe and negative impact on growth, by slowing down the growth of the plant and can infect the fruits as well.
+ - Project Dataset
+    - The dataset was dowloaded from Kaggle. It contains 2104 healthy leaves and 2104 affected leaves.
+ - The project has two business requirements:
+    - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
+    - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
+ - Link to additional information
+    - For more information, please visit my GitHub Repo read the README file.
 
 ### Page 2: Leaves Visualizer
+- It will answer 1st Requirement: The client is interested in having a study that visually differentiates a parasitised from an healthy leaves.
+  - Checkbox 1 - Difference between average and variability image
+  - Checkbox 2 - Differences between average mildew infected leaf and average healthy leaf
+  - Checkbox 3 - Image Montage for healthy and infected leaves
 
 ### Page 3: Powdery Mildew Detection
 
+- 2nd Business Requirement: "The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew."
+- Link to download a set of mildew infected and uninfected leaf images for live prediction: "You can download images containing powdery mildew and healthy leaves for prediction [here].(https://www.kaggle.com/datasets/codeinstitute/cherry-leaves/code)."
+- User Interface with a file uploader widget. The user should upload multiple cherry leaf images. It will display the image and a prediction statement, indicating if the leaf is infected or not with powdery mildew and the probability associated with this statement.
+- Table with the image name and prediction results.
+- Download button to download table in a csv file
+
 ### Page 4: Project Hypothesis and Validation
 
+Block for each project hypothesis and the conclusion and how this is validated:
+
+Cherry leaves which are infected with powdery mildew have a white coating and spots on its sureface. Infected leaves can clearly be distinguished from healthy leavesand validation can be done by comparing healthy and infected leaves based on images.
+
+Average Image, Variability Image and Difference between Averages studies did not reveal any clear pattern to differentiate one from another except some whiteness to the image. An Image Montage shows that mildew infected leaves have white coats on their surface.
+
+An ML based model is used in an image visualizer to differentiate between healthy and infected cherry leafs. The model should have a minimum validity of 97% accuracy. By the help of this ML based image visualizer the process should become much more effective for the company in terms of time and money saving.
+
 ### Page 5: ML Performance Metrics
+
+- Label Frequencies for Train, Validation and Test Sets
+- Model History: Accuracy and Losses
+- Model evaluation result
+
+
 
 ## Unfixed Bugs
 
