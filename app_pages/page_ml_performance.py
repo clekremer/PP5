@@ -8,10 +8,10 @@ from src.machine_learning.evaluate_clf import load_test_evaluation
 def page_ml_performance_metrics():
     version = 'v4'
 
-    st.write("### Train, Validation and Test Set: Labels Frequencies")
+    st.write("### Frequencies of Train, Validation and Test Set")
 
     labels_distribution = plt.imread(f"outputs/{version}/labels_distribution.png")
-    st.image(labels_distribution, caption='Labels Distribution on Train, Validation and Test Sets')
+    st.image(labels_distribution, caption='Frequencies of Train, Validation and Test Sets')
     st.write("---")
 
 
@@ -25,5 +25,5 @@ def page_ml_performance_metrics():
         st.image(model_loss, caption='Model Training Losses')
     st.write("---")
 
-    st.write("### Generalised Performance on Test Set")
+    st.write("### Performance of Test Set")
     st.dataframe(pd.DataFrame(load_test_evaluation(version), index=['Loss', 'Accuracy']))

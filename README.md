@@ -48,8 +48,6 @@ To save time in this process, the IT team suggested an ML system that detects in
 
 ## The rationale to map the business requirements to the Data Visualisations and ML tasks
 
-- List your business requirements and a rationale to map them to the Data Visualisations and ML tasks.
-
 Business Requirement 1: Data Visualization
 
 We will display the "mean" and "standard deviation" images for healthy and mildew infected leaves.

@@ -12,12 +12,12 @@ import random
 def page_leaves_visualizer_body():
     st.write("### Leaves Visualizer")
     st.info(
-        f"* The client is interested in having a study that visually "
+        f" 1st Requirement: The client is interested in having a study that visually"
         f" differentiates a parasitised from an healthy leaves.")
     
     st.success(
-        f"This page should provide a visual reference of the differences "
-        f"between a healthy Cherry Leaf and a Cherry Leaf infected by powdery mildew"
+        f" This page should provide a visual reference of the differences "
+        f" between a healthy Cherry Leaf and a Cherry Leaf infected by powdery mildew"
     )
 
     

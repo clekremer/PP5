@@ -11,9 +11,9 @@ def page_summary_body():
     st.info(
         f" Powdery mildew is a fungal disease on cherry trees."
         f" Infected plants display white powdery coat on the leaves and stems."
-        f" The disease occurs mostly in high humid and moderate temperatures"
+        f" The disease occurs mostly in high humid and moderate temperatures."
         f" It can have severe and negative impact on growth, by slowing down the growth of the plant"
-        f" and can infect the fruits as well"
+        f" and can infect the fruits as well."
     )
 
     st.warning(
