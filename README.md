@@ -4,13 +4,14 @@
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
 3. [Hypothesis and how to validate](#hypothesis-and-how-to-valide)
-4. [Rationale to map the business requirements to the data visualizations and ML tasks](#Rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ML-tasks)
-5. [ML Business case](#ml-business-case)
+4. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ML-tasks)
+5. [ML Business Case](#ml-business-case)
 6. [Dashboard design](#dashboard-design-streamlit-app-user-interface)
 7. [Unfixed Bugs](#unfixed-bugs)
 8. [Deployment](#deployment)
 9. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
 10. [Credits](#credits)
+11. [Acknowledgements](#acknowledgements)
 
 ## Cloud IDE Reminders
 
@@ -38,7 +39,7 @@ To save time in this process, the IT team suggested an ML system that detects in
 - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-## Hypothesis and how to validate?
+## Hypothesis and how to validate
 
  - Cherry leaves which are infected with powdery mildew have a white coating and spots on its sureface
  - Infected leaves can clearly be distinguished from healthy leaves and validation can be done by comparing healthy and infected leaves based on images
@@ -143,6 +144,6 @@ We want to build a binary classifier and generate reports.
 - The photos used on the home and sign-up page are from This Open-Source site.
 - The images used for the gallery page were taken from this other open-source site.
 
-## Acknowledgements (optional)
+## Acknowledgements
 
 Special thanks to Kristyna for all your support, kindness, availability and positive attitude!
