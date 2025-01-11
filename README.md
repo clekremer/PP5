@@ -134,13 +134,43 @@ An ML based model is used in an image visualizer to differentiate between health
 
 ## Unfixed Bugs
 
-- You will need to mention unfixed bugs and why they were unfixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable for consideration, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed.
+
+I hade a big issue during deployment, which was caused by compatibility conflicts. The old template provided by Code institute was build for Python version 3.8.18 and its compatible packages:
+
+Python Version Compatibility
+Package	Compatible      Python Versions
+numpy==1.19.2	        Python 3.6 - 3.8
+pandas==1.1.2	        Python 3.6 - 3.8
+matplotlib==3.3.1	    Python 3.6 - 3.8
+seaborn==0.11.0	        Python 3.6 - 3.8
+plotly==4.12.0	        Python 3.6 - 3.8
+streamlit==0.85.0	    Python 3.7 - 3.9
+scikit-learn==0.24.2	Python 3.6 - 3.9
+tensorflow-cpu==2.6.0	Python 3.6 - 3.9
+keras==2.6.0	        Python 3.6 - 3.9
+protobuf==3.20	        Python 3.6 - 3.10
+altair<5	            Python 3.6 - 3.10
+
+This build could be deployed on Heroku-20. By using above parameter and excluding input dataset in slugignore and reducing image down to 50x50 it was almost possible to stay below the max. slugsize of 500MB. 
+
+Since few days python 3.8.18 is not supported anymore:
+![Heroku issue Python version 3.8.18](assets/images/heroku_issue_1.PNG)
+
+The Python version and the dependencies for the Code Institute template were changed last month:
+
+![Heroku issue Python version 3.8.18](assets/images/heroku_issue_2.PNG)
+![Heroku issue Python version 3.8.18](assets/images/heroku_issue_3.PNG)
+![Heroku issue Python version 3.8.18](assets/images/heroku_issue_4.PNG)
+
+The dependencies, especially tensorflow-cpu==2.16.1 is much bigger now. Hence it was very difficult to stay in the given slugsize of 500MB.
+For this reason I reduced the image shape size down to 30x30. The Model is still valid. On my local machine I used 256x256. I reduced it only because of this limitation down to 30x30. In a real life scenario I would prefer to use an infrastructure which has not such limitation. It took me several days effort to deal with this issue. 
+
 
 ## Deployment
 
 ### Heroku
 
-- The App live link is: `https://YOUR_APP_NAME.herokuapp.com/`
+- The App live link is: `https://pp5milddetect-6c1639863d14.herokuapp.com/`
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
 - The project was deployed to Heroku using the following steps.
 
