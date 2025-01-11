@@ -7,7 +7,8 @@
 /README.md
 /.gitpod.dockerfile
 /.gitpod.yml
-/app_pages/__pycache__/*
+/app_pages/__pycache__
+/src/__pycache__
 
 /outputs/v1/*
 
@@ -31,9 +32,9 @@
 /workspace/PP5/jupyter_notebooks/DataVisualization.ipynb
 /workspace/PP5/jupyter_notebooks/ModellingEvaluation.ipynb
 /workspace/PP5/jupyter_notebooks/DataCollection.ipynb
-/README.md
-/inputs/cherry_leaves_dataset/cherry-leaves/test/*
+README.md
+/inputs/cherry_leaves_dataset/cherry-leaves/test
 /inputs/cherry_leaves_dataset/cherry-leaves/healthy
 /inputs/cherry_leaves_dataset/cherry-leaves/powdery_mildew
-/inputs/cherry-leaves_dataset/cherry-leaves/train/*
+/inputs/cherry-leaves_dataset/cherry-leaves/train
 /assets/images
