@@ -27,13 +27,13 @@
 .git/
 *.pdf
 *.zip
-jupyter_notebooks/
+/jupyter_notebooks/
 /workspace/PP5/jupyter_notebooks/DataVisualization.ipynb
 /workspace/PP5/jupyter_notebooks/ModellingEvaluation.ipynb
 /workspace/PP5/jupyter_notebooks/DataCollection.ipynb
-README.md
+/README.md
 /inputs/cherry_leaves_dataset/cherry-leaves/test/*
 /inputs/cherry_leaves_dataset/cherry-leaves/healthy
 /inputs/cherry_leaves_dataset/cherry-leaves/powdery_mildew
-/inputs/cherry-leaves_dataset/cherry-leaves/train
+/inputs/cherry-leaves_dataset/cherry-leaves/train/*
 /assets/images
