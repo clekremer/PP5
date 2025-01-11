@@ -74,6 +74,8 @@ We want to build a binary classifier and generate reports.
 
 ### Page 1: Quick Project Summary
 
+![Page 1: Project Summary](assets/images/page_summary.png)
+
  - General Information
     - Powdery mildew is a fungal disease on cherry trees. 
     - Infected plants display white powdery coat on the leaves and stems. 
@@ -88,12 +90,17 @@ We want to build a binary classifier and generate reports.
     - For more information, please visit my GitHub Repo read the README file.
 
 ### Page 2: Leaves Visualizer
-- It will answer 1st Requirement: The client is interested in having a study that visually differentiates a parasitised from an healthy leaves.
+
+![Page 2: Leaves Visualizer](assets/images/page_leaves_visualizer.png)
+
+- It will answer the 1st Requirement: The client is interested in having a study that visually differentiates a parasitised from an healthy leaves.
   - Checkbox 1 - Difference between average and variability image
   - Checkbox 2 - Differences between average mildew infected leaf and average healthy leaf
   - Checkbox 3 - Image Montage for healthy and infected leaves
 
 ### Page 3: Powdery Mildew Detection
+
+![Page 3: Mildew Detection](assets/images/page_mildew_detection.png)
 
 - 2nd Business Requirement: "The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew."
 - Link to download a set of mildew infected and uninfected leaf images for live prediction: "You can download images containing powdery mildew and healthy leaves for prediction [here].(https://www.kaggle.com/datasets/codeinstitute/cherry-leaves/code)."
@@ -102,6 +109,8 @@ We want to build a binary classifier and generate reports.
 - Download button to download table in a csv file
 
 ### Page 4: Project Hypothesis and Validation
+
+![Page 4: Project Hypothesis](assets/images/page_project_hypothesis.png)
 
 Block for each project hypothesis and the conclusion and how this is validated:
 
@@ -112,6 +121,8 @@ Average Image, Variability Image and Difference between Averages studies did not
 An ML based model is used in an image visualizer to differentiate between healthy and infected cherry leafs. The model should have a minimum validity of 97% accuracy. By the help of this ML based image visualizer the process should become much more effective for the company in terms of time and money saving.
 
 ### Page 5: ML Performance Metrics
+
+![Page 5: ML Performance Metrics](assets/images/page_ml_performance.png)
 
 - Label Frequencies for Train, Validation and Test Sets
 - Model History: Accuracy and Losses
