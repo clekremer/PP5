@@ -11,7 +11,7 @@ def page_project_hypothesis_body():
         f" **Validation:** Check visualisation page and compare average image and variability of healthy and infected leaves."
         f" Check differences of average healthy and infected leaves.\n\n"
     )
-     st.warning(    
+    st.warning(    
         f" Average Image, Variability Image and difference of average healthy and infected leaves did not reveal any clear pattern"
         f" to differentiate one from another except some whiteness to the image.\n\n"
     )
