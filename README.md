@@ -7,7 +7,7 @@
 4. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ML-tasks)
 5. [ML Business Case](#ml-business-case)
 6. [Dashboard design](#dashboard-design)
-7. [Unfixed Bugs](#unfixed-bugs)
+7. [## Issues](#issues)
 8. [Deployment](#deployment)
 9. [Technologies Used](#technologies-used)
 10. [Credits](#credits)
@@ -116,6 +116,121 @@ b. visualization page which helps to differentiate if a cherry leaf is healthy o
 c. a detection page where I can upload leaf images to check if they are infected or not (**Business Requirement 2**)
 d. a ML performance page which provides data about the reliability of the used model
 
+## Testing
+
+### User Story Testing:
+
+#### Testing of User story: Data visualization
+
+As a data practitioner I want to create diagrams and visualize data and image montages to differentiate a healthy cherry leaf from one with powdery mildew (**Business Requirement 1**).
+
+Acceptance Criteria
+a. Difference between average and variability image 
+
+   Testing steps:
+      - Select "Leaves Visualizer" on Dashboard Menu
+      - Hit Checkbox "Difference between average and variability image"
+
+   Result:
+      - Image diagrams for average and variability images for healthy and infected leaves will be displayed  
+
+b. Differences between average mildew infected leaf and average healthy leaf
+
+   Testing steps:
+      - Select "Leaves Visualizer" on Dashboard Menu
+      - Hit Checkbox "Differences between average mildew infected leaf and average healthy leaf"
+      
+   Result:
+      - Image diagrams for "Difference between average images" will be displayed  
+
+c. Image Montage for healthy and infected leaves
+
+   Testing steps:
+      - Select "Leaves Visualizer" on Dashboard Menu
+      - Select "powdery mildew" or "healthy" in selection field on Dashboard Menu
+      - Click Button "Create Montage"
+
+   Result:
+      - An Image Montage of 24 healthy or 24 powdery mildew infected leaves will be displayed 
+
+
+#### Testing of User story: Data Modelling and Evaluation
+
+As a data practitioner want create, train and validate ML model which is suitable to predict if a cherry leaf is healthy or contains powdery mildew (**Business Requirement 2**).
+
+Acceptance Criteria
+a. Model training accuracy should be > 97%
+
+   Testing steps:
+      - Select "ML Performance Metrics" on Dashboard Menu
+
+   Result:
+      - Check Accuracy and Loss in Performance of Test Set
+      - Check Accuracy in Model History 
+
+b. Model should be optimised according to the requirements and don´t over or under fit
+
+   Testing steps:
+      - Select "ML Performance Metrics" on Dashboard Menu
+
+   Result:
+      - Check Model Training losses and accuracy in Model History
+
+c. Model should be validated against new data 
+
+      Testing steps:
+      - Select "Mildew Detection" on Dashboard Menu
+      - Click on Kaggle Download link to download sample data 
+      - Click "browse files" and select sample data to validate
+
+   Result:
+      - Healthy and infected leaves should be validated correctly 
+
+### Testing of User story: Dashboard
+
+As a user (cherry tree farmer) I want to have a dashboard app so that I can visually differentiate a healthy cherry leaf from one with powdery mildew and predict if a cherry leaf is healthy or contains powdery mildew.
+
+Acceptance Criteria
+a. summary page with brief overview about the project, app, hypothesis and requirements
+
+   Testing steps:
+      - Select "Quick Project Summary" on Dashboard Menu
+
+   Result:
+      - Check general informations (project,requirements etc.) about project
+      - Check README.md file under the given link
+
+b. visualization page which helps to differentiate if a cherry leaf is healthy or not (**Business Requirement 1**)
+
+   Testing steps:
+      - Select "visualization page" on Dashboard Menu
+      - Select any of the three checkboxes 
+
+   Result:
+      - Compare the visualization data for differentiating if a cherry leaf is healthy or not
+
+c. a detection page where I can upload leaf images to check if they are infected or not (**Business Requirement 2**)
+
+
+   Testing steps:
+      - Select "Mildew Detection" on Dashboard Menu
+      - Download saample data
+      - Click browse files button and evaluate sample data
+
+   Result:
+      - Sample data should be detected correctly as healthy or infected 
+
+d. a ML performance page which provides data about the reliability of the used model
+
+   Testing steps:
+      - Select "ML Performance Metrics" on Dashboard Menu
+
+   Result:
+      - Check Frequencies of Train, Validation and Test Set
+      - Check Model History
+      - Check Performance of Test Set
+
+
 ## Dashboard Design
 
 ### Page 1: Quick Project Summary
@@ -179,7 +294,6 @@ An ML based model is used in an image visualizer to differentiate between health
 ![Page 5: ML Performance Metrics](assets/images/page_ml_performance_2.png)
 
 ## Issues
-
 
 I hade a big issue during deployment, which was caused by compatibility conflicts. The old template provided by Code institute was build for Python version 3.8.18 and its compatible packages:
 
@@ -247,7 +361,9 @@ web: sh setup.sh && streamlit run app.py
 
 ## Technologies Used
 
-### Languages: [Python](https://www.python.org/)
+### Languages: 
+
+[Python](https://www.python.org/)
 
 ### Main Data Analysis and Machine Learning Libraries
 
