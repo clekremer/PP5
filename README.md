@@ -3,13 +3,13 @@
 ## Table of Contents
 1. [Dataset Content](#dataset-content)
 2. [Business Requirements](#business-requirements)
-3. [Hypothesis and how to validate](#hypothesis-and-how-to-valide)
+3. [Hypothesis and how to validate](#hypothesis-and-how-to-validate)
 4. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ML-tasks)
 5. [ML Business Case](#ml-business-case)
 6. [Dashboard design](#dashboard-design)
 7. [Unfixed Bugs](#unfixed-bugs)
 8. [Deployment](#deployment)
-9. [Main Data Analysis and Machine Learning Libraries](#main-data-analysis-and-machine-learning-libraries)
+9. [Technologies Used](#technologies-used)
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
 
@@ -39,24 +39,30 @@ To save time in this process, the IT team suggested an ML system that detects in
 - 1 - The client is interested in conducting a study to visually differentiate a healthy cherry leaf from one with powdery mildew.
 - 2 - The client is interested in predicting if a cherry leaf is healthy or contains powdery mildew.
 
-## Hypothesis and how to validate
+## Hypothesis and how to validate 
 
- - Cherry leaves which are infected with powdery mildew have a white coating and spots on its sureface
- - Infected leaves can clearly be distinguished from healthy leaves and validation can be done by comparing healthy and infected leaves based on images
- - an ML based model is used in an image visualizer to differentiate between healthy and infected cherry leafs
- - the model should have a minimum validity of 97% accuracy
- - By the help of this ML based image visualizer the process should become much more effective for the company in terms of time and money saving
+**Hypothesis 1**:
+ - Cherry leaves which are infected with powdery mildew have a white coating and spots on its sureface. Infected leaves can clearly be distinguished from healthy leaves and validation can be done by comparing healthy and infected leaves based on images.
+ - **Validation**: Check visualisation page and compare average image and variability of healthy and infected leaves. Check differences of average healthy and infected leaves. 
 
-## The rationale to map the business requirements to the Data Visualisations and ML tasks
+**Hypothesis 2**:
+ - Average Image, Variability Image and Difference between Averages studies did not reveal any clear pattern to differentiate one from another except some whiteness to the image. An Image Montage shows that mildew infected leaves have white coats on their surface.
+ - **Validation**: Check visualisation page and create image montages of 24 healthy and 24 infected leaves and compare the differences. 
 
-Business Requirement 1: Data Visualization
+**Hypothesis 3**:
+ - An ML based model is used in an image visualizer to differentiate between healthy and infected cherry leafs. The model should have a minimum validity of 97% accuracy. By the help of this ML based image visualizer the process should become much more effective for the company in terms of time and money saving.
+ - **Validation**: Check mildew detection page and load examplae leaf images of healthy and infected leaves and check the results. 
+
+## The rationale to map the business requirements to the Data Visualizations and ML tasks
+
+**Business Requirement 1**: Data Visualization
 
 We will display the "mean" and "standard deviation" images for healthy and mildew infected leaves.
 We will display the difference between average healthy and mildew infected leaves.
 We will display an image montage for either healthy or mildew infected leaves. 
 
 
-Business Requirement 2: Classification
+**Business Requirement 2**: Classification
 
 We want to predict if a given leaf is infected with powdery mildew or not. 
 We want to build a binary classifier and generate reports.
@@ -69,6 +75,46 @@ We want to build a binary classifier and generate reports.
  - The model output is defined as a flag, indicating if the leaf or the tree is infected with powdery mildew. The idea is that employees of the plantation will take a picture of some leaves of the tree and evaluate them in the App. The prediction is made on the fly.
  - Currently mildew infection is identified manually in a very time-consuming process so any cherry plantation farm would benefit by using this model 
  - The training data can be downloaded from Kaggle. The original image format is 256x256. As we need to consider a max Slug size of 500 MB on Heroku it is required to reduce the image fomat to 40x40. It is considered that this has no negative impact on model performance. 
+
+## User Stories
+
+### User story: Data Collection and Preparation 
+
+As a data practitioner, I want collect, prepare and clean historical data to use it for data analysis in my ML prediction model.
+
+Acceptance Criteria
+a. dataset has to be sufficient enough to create a valid prediction model
+b. dataset has to be sufficient enough to create a dataset for Train, Test and Validate
+c. dataset need to have a proper format to use in in GitHub and Heroku
+d. as I´m using Image based classification model non-image files have to be excluded
+
+### User story: Data visualization
+
+As a data practitioner I want to create diagrams and visualize data and image montages to differentiate a healthy cherry leaf from one with powdery mildew (**Business Requirement 1**).
+
+Acceptance Criteria
+a. Difference between average and variability image
+b. Differences between average mildew infected leaf and average healthy leaf
+c. Image Montage for healthy and infected leaves
+
+### User story: Data Modelling and Evaluation
+
+As a data practitioner want create, train and validate ML model which is suitable to predict if a cherry leaf is healthy or contains powdery mildew (**Business Requirement 2**).
+
+Acceptance Criteria
+a. Model training accuracy should be > 97%
+b. Model should be optimised according to the requirements and don´t over or under fit
+c. Model should be validated against new data
+
+### User story: Dashboard
+
+As a user (cherry tree farmer) I want to have a dashboard app so that I can visually differentiate a healthy cherry leaf from one with powdery mildew and predict if a cherry leaf is healthy or contains powdery mildew.
+
+Acceptance Criteria
+a. summary page with brief overview about the project, app, hypothesis and requirements
+b. visualization page which helps to differentiate if a cherry leaf is healthy or not (**Business Requirement 1**)
+c. a detection page where I can upload leaf images to check if they are infected or not (**Business Requirement 2**)
+d. a ML performance page which provides data about the reliability of the used model
 
 ## Dashboard Design
 
@@ -132,7 +178,7 @@ An ML based model is used in an image visualizer to differentiate between health
 
 ![Page 5: ML Performance Metrics](assets/images/page_ml_performance_2.png)
 
-## Unfixed Bugs
+## Issues
 
 
 I hade a big issue during deployment, which was caused by compatibility conflicts. The old template provided by Code institute was build for Python version 3.8.18 and its compatible packages:
@@ -171,7 +217,25 @@ For this reason I reduced the image shape size down to 30x30. The Model is still
 ### Heroku
 
 - The App live link is: `https://pp5milddetect-6c1639863d14.herokuapp.com/`
+- Ensure in the setup.sh file containing the following:
+```
+mkdir -p ~/.streamlit/
+echo "\
+[server]\n\
+headless = true\n\
+port = $PORT\n\
+enableCORS = false\n\
+\n\
+" > ~/.streamlit/config.toml
+```
+
 - Set the runtime.txt Python version to a [Heroku-20](https://devcenter.heroku.com/articles/python-support#supported-runtimes) stack currently supported version.
+
+- Create a Procfile file and add the following:
+```
+web: sh setup.sh && streamlit run app.py
+```
+
 - The project was deployed to Heroku using the following steps.
 
 1. Log in to Heroku and create an App
@@ -179,9 +243,13 @@ For this reason I reduced the image shape size down to 30x30. The Model is still
 3. Select your repository name and click Search. Once it is found, click Connect.
 4. Select the branch you want to deploy, then click Deploy Branch.
 5. The deployment process should happen smoothly if all deployment files are fully functional. Click the button Open App on the top of the page to access your App.
-6. If the slug size is too large, then add large files not required for the app to the .slugignore file.
+6. If the slug size is too large, then add large files not required for the app to the .slugignore file. (e.g.: input data; assets, readme, cache etc.) 
 
-## Main Data Analysis and Machine Learning Libraries
+## Technologies Used
+
+### Languages: [Python](https://www.python.org/)
+
+### Main Data Analysis and Machine Learning Libraries
 
  **NumPy**: A library for numerical computations in Python, providing support for multi-dimensional arrays, mathematical functions, linear algebra, and random number generation.
 
@@ -200,6 +268,12 @@ For this reason I reduced the image shape size down to 30x30. The Model is still
  **TensorFlow (CPU version)**: A library for building and deploying machine learning models, particularly deep learning, with tools for training neural networks on CPUs.
 
  **Keras**: A deep learning API running on top of TensorFlow, designed to enable fast prototyping, minimal code, and seamless implementation of neural networks.
+
+### Other Technologies
+
+* [GitHub](https://github.com/) - Code repository and GitHub projects was used as a Kanban board for Agile development
+* [Heroku](https://heroku.com) - For application deployment
+* [Gitpod](https://gitpod.io/) - IDE for development
 
 
 ## Credits
@@ -220,4 +294,4 @@ For this reason I reduced the image shape size down to 30x30. The Model is still
 
 ## Acknowledgements
 
-Special thanks to Kristyna for all your support, kindness, availability and positive attitude!
+Thanks to my mentor Mo Shami for his advise during the work on my project. Special thanks to Kristyna for all your support, kindness, availability and positive attitude!
