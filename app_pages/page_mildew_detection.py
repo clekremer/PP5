@@ -16,7 +16,7 @@ def page_mildew_detection_body():
         )
 
     st.write(
-        f" You can download images containing powdery mildew and healthy leaves for prediction [here].(https://www.kaggle.com/datasets/codeinstitute/cherry-leaves/code)."
+        f" You can download images containing powdery mildew and healthy leaves for prediction [here](https://www.kaggle.com/datasets/codeinstitute/cherry-leaves/code)."
         )
 
     st.write("---")

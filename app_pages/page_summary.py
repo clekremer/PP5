@@ -32,4 +32,4 @@ def page_summary_body():
 
     st.write(
         f"For more information, please visit my GitHub Repo **read** the "
-        f"[README file](https://github.com/clekremer/PP5/blob/main/README.md).")
+        f"[README file](https://github.com/clekremer/PP5/blob/Test-slugsize-older-v-for-deployment/README.md).")

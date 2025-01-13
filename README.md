@@ -74,7 +74,7 @@ We want to build a binary classifier and generate reports.
  - the model success metrics are accuracy of 99% or above on the test set.
  - The model output is defined as a flag, indicating if the leaf or the tree is infected with powdery mildew. The idea is that employees of the plantation will take a picture of some leaves of the tree and evaluate them in the App. The prediction is made on the fly.
  - Currently mildew infection is identified manually in a very time-consuming process so any cherry plantation farm would benefit by using this model 
- - The training data can be downloaded from Kaggle. The original image format is 256x256. As we need to consider a max Slug size of 500 MB on Heroku it is required to reduce the image fomat to 40x40. It is considered that this has no negative impact on model performance. 
+ - The training data can be downloaded from Kaggle. The original image format is 256x256. As we need to consider a max Slug size of 500 MB on Heroku it is required to reduce the image fomat to 30x30. It is considered that this has no negative impact on model performance. 
 
 ## User Stories
 
@@ -275,11 +275,17 @@ d. a ML performance page which provides data about the reliability of the used m
 
 Block for each project hypothesis and the conclusion and how this is validated:
 
-Cherry leaves which are infected with powdery mildew have a white coating and spots on its sureface. Infected leaves can clearly be distinguished from healthy leavesand validation can be done by comparing healthy and infected leaves based on images.
+Hypothesis 1: Cherry leaves which are infected with powdery mildew have a white coating and spots on its sureface. Infected leaves can clearly be distinguished from healthy leaves.
+Validation: Check visualisation page and compare average image and variability of healthy and infected leaves. Check differences of average healthy and infected leaves.
+Average Image, Variability Image and difference of average healthy and infected leaves did not reveal any clear pattern to differentiate one from another except some whiteness to the image.
 
-Average Image, Variability Image and Difference between Averages studies did not reveal any clear pattern to differentiate one from another except some whiteness to the image. An Image Montage shows that mildew infected leaves have white coats on their surface.
+Hypothesis 2: An Image Montage shows that mildew infected leaves have white coats on their surface.
+Validation: Check visualisation page and create image montages of 24 healthy and 24 infected leaves and compare the differences.
+Comparing 24 healthy and infected leaves from the Montage differences are intuitively visible.
 
-An ML based model is used in an image visualizer to differentiate between healthy and infected cherry leafs. The model should have a minimum validity of 97% accuracy. By the help of this ML based image visualizer the process should become much more effective for the company in terms of time and money saving.
+Hypothesis 3: An ML based model is used in an image visualizer to differentiate between healthy and infected cherry leafs. The model should have a minimum validity of 97% accuracy. By the help of this ML based image visualizer the process should become much more effective for the company in terms of time and money saving.
+Validation: Check mildew detection page and load example leaf images of healthy and infected leaves and check the results.
+The model is validated with > 97% accuracy. All tested example images were predicted correctly.
 
 ### Page 5: ML Performance Metrics
 
