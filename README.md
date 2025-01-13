@@ -7,7 +7,7 @@
 4. [The rationale to map the business requirements to the Data Visualisations and ML tasks](#the-rationale-to-map-the-business-requirements-to-the-data-visualizations-and-ML-tasks)
 5. [ML Business Case](#ml-business-case)
 6. [Dashboard design](#dashboard-design)
-7. [## Issues](#issues)
+7. [Issues](#issues)
 8. [Deployment](#deployment)
 9. [Technologies Used](#technologies-used)
 10. [Credits](#credits)
@@ -426,8 +426,9 @@ web: sh setup.sh && streamlit run app.py
 
 ## Credits
 
-[Code Institute Walkthrough Project 01](https://github.com/Code-Institute-Solutions/WalkthroughProject01): Code, basic structure, logic and design 
-[Code Institute Project Idea: Mildew Detection in Cherry Leaves](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves): Template
+ - [Code Institute Walkthrough Project 01](https://github.com/Code-Institute-Solutions/WalkthroughProject01): Code, basic structure, logic and design
+  
+ - [Code Institute Project Idea: Mildew Detection in Cherry Leaves](https://github.com/Code-Institute-Solutions/milestone-project-mildew-detection-in-cherry-leaves): Template
 
 
 
